@@ -74,4 +74,14 @@
         <item>7</item>
         <item>11</item>
     </integer-array>
+    <string-array name="orientation_entries">
+        <item>Auto</item>
+        <item>Landscape</item>
+        <item>Landscape (reverse)</item>
+    </string-array>
+    <integer-array name="orientation_values">
+        <item>6</item>
+        <item>0</item>
+        <item>8</item>
+    </integer-array>
 </resources>

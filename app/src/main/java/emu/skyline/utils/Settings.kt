@@ -6,6 +6,7 @@
 package emu.skyline.utils
 
 import android.content.Context
+import android.content.pm.ActivityInfo
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -39,4 +40,6 @@ class Settings @Inject constructor(@ApplicationContext private val context : Con
     var maxRefreshRate by sharedPreferences(context, false)
 
     var systemLanguage by sharedPreferences(context, 1)
+
+    var orientation by sharedPreferences(context, ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE)
 }
